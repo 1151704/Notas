@@ -1,0 +1,175 @@
+:root {
+    --first-color: #007BDF;
+    --first-color-alt: #006DC6;
+    --second-color: #00CBFF;
+    --second-color-alt: #00BFF0;
+    --third-color: #FF3C32;
+    --third-color-alt: #FF2419;
+	
+	--dark-color:  #282D31;
+	--text-color:  #53575A;
+	--dark-color-alt:  #141618;
+	--border-color:  #DFE0E0;
+    --body-bg: #FAFDFF;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+body {
+    background: var(--body-bg);    
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.main-page {
+    padding-top: 2em;
+}
+
+/************************************************/
+/************************************************/
+/*                 MENU                         */
+/************************************************/
+/************************************************/
+.main-menu {    
+    /*font-size: 10px;*/
+    /*line-height: 15px;*/
+    text-transform: uppercase;
+    text-align: left;
+}
+.main-menu>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-bottom: 3px solid var(--first-color-alt);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+.main-menu>ul li#responsive-tab {
+    display: none;
+}
+.main-menu>ul li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.main-menu>ul li.right {
+    float: right;
+}
+
+.main-menu>ul li.has-sub {
+    position: relative;
+}
+
+.main-menu>ul li.has-sub:hover ul {
+    display: block;
+}
+
+.main-menu>ul li.has-sub ul {
+    display: none;
+    /*width: 250px;*/
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-bottom: 3px solid var(--first-color-alt);
+    border-top: 0 none;
+}
+
+.main-menu>ul li.has-sub ul li {
+    display: block;
+}
+
+.main-menu>ul li.has-sub>a {
+    background-color: #FFFFFF;
+}
+
+.main-menu>ul li.has-sub>a.active,
+.main-menu>ul li.has-sub>a:hover {
+    background: var(--first-color);
+}
+
+.main-menu>ul li a {
+    display: block;
+    padding: 1em .5em;
+    text-decoration: none;
+    color: var(--text-color);
+    text-shadow: 0px 1px 0px #ccc;
+}
+
+.main-menu>ul li a.active,
+.main-menu>ul li a:hover {
+    background: var(--first-color);
+    color: #fff;
+    text-shadow: 0px 1px 0px #000;
+}
+
+@media (max-width: 640px) {
+    .main-menu>ul {
+        width: 100%;
+    }
+
+    .main-menu>ul li#responsive-tab {
+        display: block;
+    }
+
+    .main-menu>ul li#responsive-tab a {
+        background: url('../images/menu.png') no-repeat;
+        background-position: 95% -100%;
+    }
+
+    .main-menu>ul li#responsive-tab a:hover {
+        background-color: var(--first-color);
+        background-position: 95% 200%;
+    }
+
+    .main-menu>ul li {
+        display: none;
+    }
+
+    .main-menu>ul li.right {
+        float: none;
+    }
+
+    .main-menu>ul li.has-sub {
+        position: relative;
+    }
+
+    .main-menu>ul li.has-sub ul {
+        display: block;
+        position: static;
+        width: 100%;
+        background: #ffffff;
+        border: 0 none;
+    }
+
+    .main-menu>ul li.has-sub ul li {
+        display: block !important;
+    }
+
+    .main-menu>ul li.has-sub ul li a span {
+        display: block;
+        /*padding-left: 24px;*/
+    }
+
+    .main-menu>ul li.has-sub>a {
+        background-image: none;
+    }
+}
+
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 640px) {
+    .main-menu>ul>li.collapsed {
+        display: inline-block !important;
+        *display: inline;
+        zoom: 1;
+    }
+
+    .main-menu>ul ul li.collapsed {
+        display: block !important;
+    }
+}
