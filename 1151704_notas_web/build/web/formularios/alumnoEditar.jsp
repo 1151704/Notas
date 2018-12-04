@@ -1,9 +1,4 @@
-<%@page import="ufps.modelo.dto.Alumno"%>
-<%@page import="ufps.modelo.dto.Asignatura"%>
-<%@page import="java.util.List"%>
-<%@page import="ufps.modelo.dto.Carrera"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="controlador" scope="session" class="ufps.modelo.util.Servicio"/>
+<%@include file="../includes/imports.jsp" %>
 <%
     String codigo = request.getParameter("id");
     String nombre = "";
@@ -55,7 +50,7 @@
     <input type="text" class="form-control" name="apellido" required value="<%=apellido%>" />
 </div>
 <div class="form-group">
-    <label>DirecciÃ³n</label>
+    <label>Dirección</label>
     <input type="text" class="form-control" name="direccion"  value="<%=direccion%>" />
 </div>
 <div class="form-group">

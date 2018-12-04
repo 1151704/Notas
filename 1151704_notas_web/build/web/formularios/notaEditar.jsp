@@ -1,12 +1,4 @@
-<%@page import="ufps.modelo.dto.Nota"%>
-<%@page import="ufps.modelo.dto.Tutor"%>
-<%@page import="ufps.modelo.dto.Alumno"%>
-<%@page import="ufps.modelo.dto.Requisito"%>
-<%@page import="ufps.modelo.dto.Asignatura"%>
-<%@page import="java.util.List"%>
-<%@page import="ufps.modelo.dto.Carrera"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="controlador" scope="session" class="ufps.modelo.util.Servicio"/>
+<%@include file="../includes/imports.jsp" %>
 <%
     String datos[] = request.getParameter("id").split(",");
 

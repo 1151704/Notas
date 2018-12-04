@@ -46,7 +46,7 @@ function modales() {
         '#modal-asignaturaEditar', '#modal-asignaturaEliminar',
         '#modal-requisitoEditar', '#modal-requisitoEliminar',
         '#modal-alumnoEditar', '#modal-alumnoEliminar',
-        '#modal-tutorEditar', '#modal-tutorEliminar'
+        '#modal-tutorEditar', '#modal-tutorEliminar'        
     ];
 
 
@@ -56,7 +56,7 @@ function modales() {
 
         selectFiltro.on('change', function () {
             var item = $(this);
-            cargarListado(item.data("url"), {id: this.value}, ['#modal-notaEditar', '#modal-notaEliminar']);
+            cargarListado(item.data("url"), {id: this.value}, ['#modal-notaEditar', '#modal-notaEliminar', '#modal-equivalenteEliminar']);
         });
 
     } else {

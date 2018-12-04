@@ -1,7 +1,4 @@
-<%@page import="ufps.modelo.dto.Carrera"%>
-<%@page import="java.util.List"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="controlador" scope="session" class="ufps.modelo.util.Servicio"/>
+<%@include file="includes/imports.jsp" %>
 <%
     List<Carrera> carrerasListado = controlador.carreraListar();
 %>
@@ -17,7 +14,7 @@
         <section class="main-page">
             <div class="ed-container">
                 <div class="ed-item">
-                    <h3 class="main-titulo">AdministraciÃ³n de Carreras</h3>
+                    <h3 class="main-titulo">Administración de Carreras</h3>
                 </div>
                 <div class="ed-item s-mb-1">
                     <button class="btn btn-primary" type="button" data-toggle="modal" 

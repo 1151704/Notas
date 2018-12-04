@@ -1,11 +1,4 @@
-<%@page import="ufps.modelo.dto.Tutor"%>
-<%@page import="ufps.modelo.dto.Alumno"%>
-<%@page import="ufps.modelo.dto.Requisito"%>
-<%@page import="ufps.modelo.dto.Carrera"%>
-<%@page import="ufps.modelo.dto.Asignatura"%>
-<%@page import="java.util.List"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="controlador" scope="session" class="ufps.modelo.util.Servicio"/>
+<%@include file="includes/imports.jsp" %>
 <%
     List<Alumno> alumnosListado = controlador.alumnoListar();
     List<Carrera> carrerasListado = controlador.carreraListar();
@@ -23,7 +16,7 @@
         <section class="main-page">
             <div class="ed-container">
                 <div class="ed-item">
-                    <h3 class="main-titulo">AdministraciÃ³n de Notas</h3>
+                    <h3 class="main-titulo">Administración de Notas</h3>
                 </div>
                 <div class="ed-item s-mb-1">
                     <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal-notaRegistrar">Registrar</button>
@@ -68,7 +61,7 @@
                             <% }%>
                             <% if (asignaturasListado != null && !asignaturasListado.isEmpty()) { %>
                             <div class="form-group">
-                                <label>Alumno</label>
+                                <label>Asignatura</label>
                                 <select class="form-control" name="asignatura">
                                     <% for (Asignatura asig : asignaturasListado) {%>
                                     <option value="<%=asig.getCodAsignatura()%>"><%=asig.getNombre()%></option>
@@ -77,7 +70,7 @@
                             </div>
                             <% } else {%>
                             <div class="alert alert-warning" role="alert">
-                                No existen alumnos registrados
+                                No existen asignaturas registradas
                             </div>
                             <% }%>
                             <% if (alumnosListado != null && !alumnosListado.isEmpty()) { %>

@@ -1,7 +1,4 @@
-<%@page import="ufps.modelo.dto.*"%>
-<%@page import="java.util.List"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="controlador" scope="session" class="ufps.modelo.util.Servicio"/>
+<%@include file="includes/imports.jsp" %>
 <%
     List<Carrera> carrerasListado = controlador.carreraListar();
     List<Alumno> alumnosListado = controlador.alumnoListar();
@@ -18,7 +15,7 @@
         <section class="main-page">
             <div class="ed-container">
                 <div class="ed-item">
-                    <h3 class="main-titulo">AdministraciÃ³n de Alumnos</h3>
+                    <h3 class="main-titulo">Administración de Alumnos</h3>
                 </div>
                 <div class="ed-item s-mb-1">
                     <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal-alumnoRegistrar">Registrar</button>
@@ -31,7 +28,7 @@
                                 <th>Carrera</th>
                                 <th>Nombre</th>
                                 <th>Apellido</th>
-                                <th>DirecciÃ³n</th>
+                                <th>Dirección</th>
                                 <th>Telefono</th>
                                 <th>Email</th>
                                 <th></th>
@@ -62,7 +59,7 @@
                             <%}
                             } else {%>
                             <tr> 
-                                <td colspan="8" align="center" >NingÃºn alumno registrado</td>
+                                <td colspan="8" align="center" >Ningún alumno registrado</td>
                             </tr>
                             <% }%>
                         </tbody>
@@ -106,7 +103,7 @@
                                 <input type="text" class="form-control" name="apellido" required />
                             </div>
                             <div class="form-group">
-                                <label>DirecciÃ³n</label>
+                                <label>Dirección</label>
                                 <input type="text" class="form-control" name="direccion"  />
                             </div>
                             <div class="form-group">

@@ -1,7 +1,4 @@
-<%@page import="ufps.modelo.dto.Nota"%>
-<%@page import="java.util.List"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="controlador" scope="session" class="ufps.modelo.util.Servicio"/>
+<%@include file="../includes/imports.jsp" %>
 <%
 
     String codAlumno = request.getParameter("id");

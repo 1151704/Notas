@@ -8,7 +8,7 @@
             <li class=''><a href='alumnos.jsp'><span>Alumnos</span></a></li>
             <li class=''><a href='tutores.jsp'><span>Tutores</span></a></li>
             <li class=''><a href='notas.jsp'><span>Notas</span></a></li>
-            <li class='last'><a href='#'><span>Equivalente</span></a></li>
+            <li class='last'><a href='equivalentes.jsp'><span>Equivalente</span></a></li>
         </ul>
     </nav>
 </header>

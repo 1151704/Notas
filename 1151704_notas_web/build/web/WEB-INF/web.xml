@@ -5,75 +5,83 @@
     </welcome-file-list>
     <servlet>
         <servlet-name>CarreraRegistrar</servlet-name>
-        <servlet-class>ufps.servlets.CarreraRegistrar</servlet-class>
+        <servlet-class>ufps.controllers.CarreraRegistrar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>CarreraEditar</servlet-name>
-        <servlet-class>ufps.servlets.CarreraEditar</servlet-class>
+        <servlet-class>ufps.controllers.CarreraEditar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>CarreraEliminar</servlet-name>
-        <servlet-class>ufps.servlets.CarreraEliminar</servlet-class>
+        <servlet-class>ufps.controllers.CarreraEliminar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AsignaturaRegistrar</servlet-name>
-        <servlet-class>ufps.servlets.AsignaturaRegistrar</servlet-class>
+        <servlet-class>ufps.controllers.AsignaturaRegistrar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AsignaturaEliminar</servlet-name>
-        <servlet-class>ufps.servlets.AsignaturaEliminar</servlet-class>
+        <servlet-class>ufps.controllers.AsignaturaEliminar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AsignaturaEditar</servlet-name>
-        <servlet-class>ufps.servlets.AsignaturaEditar</servlet-class>
+        <servlet-class>ufps.controllers.AsignaturaEditar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>RequisitoEditar</servlet-name>
-        <servlet-class>ufps.servlets.RequisitoEditar</servlet-class>
+        <servlet-class>ufps.controllers.RequisitoEditar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>RequisitoRegistrar</servlet-name>
-        <servlet-class>ufps.servlets.RequisitoRegistrar</servlet-class>
+        <servlet-class>ufps.controllers.RequisitoRegistrar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>RequisitoEliminar</servlet-name>
-        <servlet-class>ufps.servlets.RequisitoEliminar</servlet-class>
+        <servlet-class>ufps.controllers.RequisitoEliminar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AlumnoRegistrar</servlet-name>
-        <servlet-class>ufps.servlets.AlumnoRegistrar</servlet-class>
+        <servlet-class>ufps.controllers.AlumnoRegistrar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AlumnoEditar</servlet-name>
-        <servlet-class>ufps.servlets.AlumnoEditar</servlet-class>
+        <servlet-class>ufps.controllers.AlumnoEditar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AlumnoEliminar</servlet-name>
-        <servlet-class>ufps.servlets.AlumnoEliminar</servlet-class>
+        <servlet-class>ufps.controllers.AlumnoEliminar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>TutorRegistrar</servlet-name>
-        <servlet-class>ufps.servlets.TutorRegistrar</servlet-class>
+        <servlet-class>ufps.controllers.TutorRegistrar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>TutorEditar</servlet-name>
-        <servlet-class>ufps.servlets.TutorEditar</servlet-class>
+        <servlet-class>ufps.controllers.TutorEditar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>TutorEliminar</servlet-name>
-        <servlet-class>ufps.servlets.TutorEliminar</servlet-class>
+        <servlet-class>ufps.controllers.TutorEliminar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>NotaRegistrar</servlet-name>
-        <servlet-class>ufps.servlets.NotaRegistrar</servlet-class>
+        <servlet-class>ufps.controllers.NotaRegistrar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>NotaEliminar</servlet-name>
-        <servlet-class>ufps.servlets.NotaEliminar</servlet-class>
+        <servlet-class>ufps.controllers.NotaEliminar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>NotaEditar</servlet-name>
-        <servlet-class>ufps.servlets.NotaEditar</servlet-class>
+        <servlet-class>ufps.controllers.NotaEditar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EquivalenteRegistrar</servlet-name>
+        <servlet-class>ufps.controllers.EquivalenteRegistrar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EquivalenteEliminar</servlet-name>
+        <servlet-class>ufps.controllers.EquivalenteEliminar</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CarreraRegistrar</servlet-name>
@@ -146,6 +154,14 @@
     <servlet-mapping>
         <servlet-name>NotaEditar</servlet-name>
         <url-pattern>/editarNota</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EquivalenteRegistrar</servlet-name>
+        <url-pattern>/registrarEquivalente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EquivalenteEliminar</servlet-name>
+        <url-pattern>/eliminarEquivalente</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
